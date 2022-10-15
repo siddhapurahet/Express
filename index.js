@@ -75,6 +75,7 @@ app.listen(port, () => {
 
 //--------------------------------------------------------
 
+/*
 const express = require("express");
 const moviesapp = express();
 const logger = require("./logger");
@@ -84,7 +85,7 @@ moviesapp.use(logger);
 
 const movies = [
     {id: 1, genre: "horror"},
-    {id: 2, genre: "Romance"},
+    {id: 2, genre: "Romance"},            //CRUD opeartions using express.
     {id: 3, genre: "comedy"},
     {id: 4, genre: "Sci-fi"}
 ]
@@ -146,3 +147,23 @@ const port = process.env.PORT || 3000;
 moviesapp.listen(port, () => {
     console.log(`Listening on ${port}`);
 })
+
+*/
+
+//--------------------------------------------------------------------------
+/*
+const promise = new Promise((resolve, reject) => {
+    console.log("first step");
+    setTimeout(() => {
+        reject(new Error("please check"));                  //Promises
+    }, 2000);
+    console.log("third step");
+});
+
+promise
+    .then(result => console.log("Result", result))
+    .catch(err => console.log("Error there", err.message));
+
+*/
+
+//---------------------------------------------------------------------------
